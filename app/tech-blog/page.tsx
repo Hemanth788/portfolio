@@ -25,6 +25,7 @@ export default async function Blog() {
     blogs = await getBlogs()
   } catch (e) {
     blogs = [];
+    console.log('error: ', e);
   }
 
   const categories = Array.from(new Set(blogs.map(i => i.category)));
