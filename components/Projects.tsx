@@ -16,6 +16,14 @@ export const Projects = () => {
             'task-list-view'
         ]
     }, {
+        title: 'Coffee Connoisseur - A cafe location app',
+        tools: 'NextJS Pages, TypeScript, Airtable, SWR',
+        images: [
+            'next-pages',
+            'location',
+            'individual-store'
+        ]
+    }, {
         title: 'Kahaniya - A storytelling platform',
         tools: 'NextJS Page Router, TypeScript, TailwindCSS, RTK, axios',
         images: [
@@ -32,14 +40,6 @@ export const Projects = () => {
             'calendar-in-progress',
             'task-list-page',
             'task-list-view'
-        ]
-    }, {
-        title: 'Coffee Connesuir - A cafe location app',
-        tools: 'NextJS Pages, TypeScript, Airtable, SWR',
-        images: [
-            'next-pages',
-            'location',
-            'individual-store'
         ]
     }
     ]
