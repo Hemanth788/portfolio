@@ -6,7 +6,7 @@ export default async function BlogUnit({ params }: { params: { slug: string } })
     const { slug } = params;
     const blog = await getBlogBySlug(slug);
     return (
-        <main className='w-screen h-[calc(100vh-60px)] px-60'>
+        <main className='w-screen h-[calc(100vh-60px)] px-4 md:px-60'>
             <h1 className='text-4xl'>{blog?.title}</h1>
             <h2 className='text-2xl'>{blog?.subTitle}</h2>
             <div className='flex gap-2 mt-2'>
