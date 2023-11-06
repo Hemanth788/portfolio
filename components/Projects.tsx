@@ -33,6 +33,14 @@ export const Projects = () => {
             'task-list-page',
             'task-list-view'
         ]
+    }, {
+        title: 'Coffee Connesuir - A cafe location app',
+        tools: 'NextJS Pages, TypeScript, Airtable, SWR',
+        images: [
+            'next-pages',
+            'location',
+            'individual-store'
+        ]
     }
     ]
     const [showIndex, setShowIndex] = useState(0);
