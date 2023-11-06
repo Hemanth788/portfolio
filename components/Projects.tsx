@@ -73,19 +73,13 @@ export const Projects = () => {
 }
 
 export const Project = ({ title, tools, imageList }: { title: string, tools: string, imageList: string[] }) => {
-    const images = [
-        'add-a-new-list',
-        'calendar-in-progress',
-        'task-list-page',
-        'task-list-view'
-    ];
     const [showIndex, setShowIndex] = useState(0);
 
     return (
         <div>
             <h3>{title}</h3>
             <h4 className="mb-2">Tools: {tools} etc.,</h4>
-            {images.map((i, index) => <Image className={twMerge(' rounded-xl', showIndex === index ? 'block' : 'hidden')} key={i} alt={i} src={`/${i}.png`} width={1000} height={500} />)}
+            {imageList.map((i, index) => <Image className={twMerge(' rounded-xl', showIndex === index ? 'block' : 'hidden')} key={i} alt={i} src={`/${i}.png`} width={1000} height={500} />)}
             <div className="flex gap-2 justify-end mt-2">
                 <ChevronLeft className=" border border-slate-400 rounded-md cursor-pointer" onClick={() => setShowIndex(p => p - 1 >= 0 ? p - 1 : images.length - 1)} />
                 <ChevronRight className=" border border-slate-400 rounded-md cursor-pointer" onClick={() => setShowIndex(p => p + 1 <= images.length - 1 ? p + 1 : 0)} />
